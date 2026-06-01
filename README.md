@@ -61,6 +61,15 @@ Open the extension options page to configure:
 - Whether pinned tabs are hidden.
 - Whether the last search query is restored.
 
+## Website
+
+The static landing page is in `site/`. Open `site/index.html` directly, or
+serve it with:
+
+```sh
+python3 -m http.server 4173 --directory site
+```
+
 ## Privacy
 
 The extension uses the `tabs` permission to read open tab titles, URLs, favicons,
