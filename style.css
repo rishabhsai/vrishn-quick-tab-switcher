@@ -1,14 +1,14 @@
 :root {
-  color-scheme: light;
-  --bg: #f4f7fb;
-  --panel: #ffffff;
-  --ink: #172033;
-  --muted: #5d6678;
-  --line: #d9e2ef;
-  --accent: #275fcb;
+  color-scheme: dark;
+  --bg: #0d1117;
+  --panel: #151a22;
+  --ink: #f6f8fc;
+  --muted: #a8b2c3;
+  --line: #273141;
+  --accent: #5b82ff;
   --accent-ink: #ffffff;
-  --soft-blue: #dce8ff;
-  --shadow: 0 26px 80px rgba(31, 46, 74, .16);
+  --soft-blue: #172a4e;
+  --shadow: 0 30px 90px rgba(0, 0, 0, .34);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -62,9 +62,9 @@ footer {
 }
 
 .brand-mark {
-  background: var(--ink);
+  background: linear-gradient(145deg, #2f6fed, #16a37b);
   border-radius: 8px;
-  color: var(--panel);
+  color: #fff;
   height: 28px;
   width: 28px;
 }
@@ -78,7 +78,7 @@ footer {
 .nav-cta {
   background: var(--ink);
   border-radius: 999px;
-  color: var(--panel);
+  color: #111722;
   padding: 9px 14px;
 }
 
@@ -91,9 +91,9 @@ footer {
 }
 
 .app-icon {
-  background: linear-gradient(145deg, #1e5ccc, #0f172a);
+  background: linear-gradient(145deg, #19346d, #2f6fed 58%, #16a37b);
   border-radius: 22px;
-  box-shadow: 0 16px 36px rgba(39, 95, 203, .25);
+  box-shadow: 0 16px 42px rgba(47, 111, 237, .32);
   color: #fff;
   font-size: 32px;
   font-weight: 800;
@@ -148,12 +148,13 @@ h1 {
 }
 
 .button.secondary {
-  background: rgba(255, 255, 255, .74);
+  background: rgba(255, 255, 255, .06);
+  color: var(--ink);
 }
 
 .product {
-  background: #1f2228;
-  border: 1px solid #101218;
+  background: #171b22;
+  border: 1px solid #2a3444;
   border-radius: 12px;
   box-shadow: var(--shadow);
   color: #f4f5f7;
@@ -165,8 +166,8 @@ h1 {
 
 .window-bar {
   align-items: center;
-  background: #313238;
-  border-bottom: 1px solid #111318;
+  background: #252b36;
+  border-bottom: 1px solid #10141c;
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(3, 12px) 1fr;
@@ -200,7 +201,7 @@ h1 {
 
 .search-row {
   align-items: center;
-  border-bottom: 1px solid #343943;
+  border-bottom: 1px solid #303948;
   color: #b9bfca;
   display: flex;
   gap: 12px;
@@ -231,6 +232,7 @@ h1 {
 
 .tab-list li.selected {
   background: #2b4779;
+  box-shadow: inset 3px 0 0 #8fb0ff;
 }
 
 .favicon {
