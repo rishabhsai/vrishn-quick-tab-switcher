@@ -62,10 +62,9 @@ footer {
 }
 
 .brand-mark {
-  background: linear-gradient(145deg, #2f6fed, #16a37b);
   border-radius: 8px;
-  color: #fff;
   height: 28px;
+  overflow: hidden;
   width: 28px;
 }
 
@@ -91,15 +90,19 @@ footer {
 }
 
 .app-icon {
-  background: linear-gradient(145deg, #19346d, #2f6fed 58%, #16a37b);
   border-radius: 22px;
   box-shadow: 0 16px 42px rgba(47, 111, 237, .32);
-  color: #fff;
-  font-size: 32px;
-  font-weight: 800;
   height: 72px;
   margin: 10px auto 18px;
+  overflow: hidden;
   width: 72px;
+}
+
+.brand-mark img,
+.app-icon img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .eyebrow,
