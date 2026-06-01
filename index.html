@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Helium Quick Switcher is a keyboard-first MRU tab switcher for Helium and Chromium browsers.">
+    <title>Helium Quick Switcher — Fast MRU tab switching</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Helium Quick Switcher home">
+        <span class="brand-mark">H</span>
+        <span>Helium Quick Switcher</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#shortcuts">Shortcuts</a>
+        <a href="https://github.com/rishabhsai/helium-quick-switcher">GitHub</a>
+        <a class="nav-cta" href="https://github.com/rishabhsai/helium-quick-switcher/archive/refs/heads/main.zip">Download</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="app-icon" aria-hidden="true">H</div>
+        <p class="eyebrow">Open source browser extension</p>
+        <h1 id="hero-title">Fast tab switching for Helium</h1>
+        <p class="lede">
+          A compact MRU popup for people who keep too many tabs open. Press a
+          shortcut, tap Q to move, release the modifier to switch, or search by
+          title and URL.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/rishabhsai/helium-quick-switcher/archive/refs/heads/main.zip">Download source</a>
+          <a class="button secondary" href="https://github.com/rishabhsai/helium-quick-switcher">View on GitHub</a>
+        </div>
+        <p class="meta">Load unpacked today. Chrome Web Store listing coming later.</p>
+
+        <figure class="product" aria-label="Helium Quick Switcher popup preview">
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>Helium Quick Switcher</strong>
+          </div>
+          <div class="search-row">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10.8 18a7.2 7.2 0 1 1 5.1-2.1l4.1 4.1-1.4 1.4-4.1-4.1A7.16 7.16 0 0 1 10.8 18Zm0-2a5.2 5.2 0 1 0 0-10.4 5.2 5.2 0 0 0 0 10.4Z"/>
+            </svg>
+            <span>Recent tabs</span>
+          </div>
+          <ol class="tab-list">
+            <li class="selected">
+              <span class="favicon red">Y</span>
+              <span>
+                <strong>YouTube</strong>
+                <small>www.youtube.com</small>
+              </span>
+              <kbd>Q</kbd>
+            </li>
+            <li>
+              <span class="favicon blue">G</span>
+              <span>
+                <strong>GitHub · helium-quick-switcher</strong>
+                <small>github.com/rishabhsai/helium-quick-switcher</small>
+              </span>
+            </li>
+            <li>
+              <span class="favicon green">D</span>
+              <span>
+                <strong>Docs · Extension shortcuts</strong>
+                <small>developer.chrome.com/docs/extensions</small>
+              </span>
+            </li>
+            <li>
+              <span class="favicon pink">M</span>
+              <span>
+                <strong>Inbox — Gmail</strong>
+                <small>mail.google.com</small>
+              </span>
+            </li>
+          </ol>
+        </figure>
+      </section>
+
+      <section id="features" class="features" aria-labelledby="features-title">
+        <p class="section-label">Features</p>
+        <h2 id="features-title">Built around muscle memory.</h2>
+        <div class="feature-grid">
+          <article>
+            <h3>MRU first</h3>
+            <p>Recently used tabs stay at the top, even after the MV3 service worker restarts.</p>
+          </article>
+          <article>
+            <h3>Release to switch</h3>
+            <p>Use the popup like an app switcher: hold the modifier, cycle, release.</p>
+          </article>
+          <article>
+            <h3>Fast search</h3>
+            <p>Type parts of a title or URL. Multi-token fuzzy matching ranks the right tab higher.</p>
+          </article>
+          <article>
+            <h3>Small controls</h3>
+            <p>Choose popup size, current-window-only mode, pinned tab visibility, and search restore.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="shortcuts" class="shortcuts" aria-labelledby="shortcuts-title">
+        <p class="section-label">Shortcuts</p>
+        <h2 id="shortcuts-title">Two popups, one workflow.</h2>
+        <div class="shortcut-table">
+          <div>
+            <span>Open alt-tab-style popup</span>
+            <kbd>⌥</kbd><kbd>Q</kbd>
+          </div>
+          <div>
+            <span>Search in alt-tab-style popup</span>
+            <kbd>⌥</kbd><kbd>W</kbd>
+          </div>
+          <div>
+            <span>Move down</span>
+            <kbd>Q</kbd>
+          </div>
+          <div>
+            <span>Move up</span>
+            <kbd>⇧</kbd><kbd>Q</kbd>
+          </div>
+        </div>
+      </section>
+
+      <section class="open-source" aria-labelledby="open-source-title">
+        <p class="section-label">Open source</p>
+        <h2 id="open-source-title">Apache-2.0 and built in public.</h2>
+        <div class="actions">
+          <a class="button secondary" href="https://github.com/rishabhsai/helium-quick-switcher/releases">View releases</a>
+          <a class="button secondary" href="https://github.com/rishabhsai/helium-quick-switcher">View source</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#top">Helium Quick Switcher</a>
+      <a href="https://github.com/rishabhsai/helium-quick-switcher">GitHub</a>
+      <a href="https://github.com/rishabhsai/helium-quick-switcher/blob/main/LICENSE">Apache-2.0</a>
+    </footer>
+  </body>
+</html>
