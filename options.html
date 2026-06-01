@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Helium Quick Switcher Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="page">
+      <h1>Helium Quick Switcher</h1>
+
+      <section class="panel">
+        <h2>Popup window</h2>
+        <label>
+          Width
+          <input id="width" type="range" min="420" max="900" step="20">
+          <output id="widthValue"></output>
+        </label>
+        <label>
+          Height
+          <input id="height" type="range" min="300" max="720" step="20">
+          <output id="heightValue"></output>
+        </label>
+      </section>
+
+      <section class="panel">
+        <h2>Tab list</h2>
+        <label class="check-row">
+          <input id="limitToCurrentWindow" type="checkbox">
+          <span>
+            Limit results to the current window
+            <small>Only show tabs from the window where you opened the switcher.</small>
+          </span>
+        </label>
+        <label class="check-row">
+          <input id="hidePinnedTabs" type="checkbox">
+          <span>
+            Hide pinned tabs
+            <small>Useful when pinned tabs are always visible and clutter the MRU list.</small>
+          </span>
+        </label>
+        <label class="check-row">
+          <input id="restoreLastSearch" type="checkbox">
+          <span>
+            Restore the last search query
+            <small>Search mode reopens with your previous query.</small>
+          </span>
+        </label>
+        <div class="actions">
+          <button id="save">Save</button>
+          <button id="reset" type="button">Reset</button>
+          <span id="status" role="status"></span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Shortcuts</h2>
+        <div class="shortcut-row">
+          <span>Open alt-tab-style popup</span>
+          <kbd>⌥</kbd><kbd>Q</kbd>
+        </div>
+        <div class="shortcut-row">
+          <span>Search in alt-tab-style popup</span>
+          <kbd>⌥</kbd><kbd>W</kbd>
+        </div>
+        <p class="note">
+          If Helium records Option+Q as a character, remove and load the
+          extension again so the manifest default can be applied.
+        </p>
+        <button id="openShortcuts" type="button">Open browser shortcuts</button>
+      </section>
+    </main>
+    <script src="options.js" type="module"></script>
+  </body>
+</html>

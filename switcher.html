@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Helium Quick Switcher</title>
+    <link rel="stylesheet" href="switcher.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="search-bar">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10.8 18a7.2 7.2 0 1 1 5.1-2.1l4.1 4.1-1.4 1.4-4.1-4.1A7.16 7.16 0 0 1 10.8 18Zm0-2a5.2 5.2 0 1 0 0-10.4 5.2 5.2 0 0 0 0 10.4Z"/>
+        </svg>
+        <input id="query" type="search" autocomplete="off" spellcheck="false"
+            placeholder="Search tabs by title or URL">
+      </section>
+      <section id="list" class="tab-list" role="listbox" aria-label="Tabs"></section>
+    </main>
+    <script src="switcher.js" type="module"></script>
+  </body>
+</html>

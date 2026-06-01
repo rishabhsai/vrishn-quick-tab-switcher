@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Helium Quick Switcher",
+  "description": "Fast MRU tab switching with fuzzy title and URL search.",
+  "version": "0.3.0",
+  "minimum_chrome_version": "114",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_title": "Switch tabs"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-switcher": {
+      "suggested_key": {
+        "default": "Alt+Q",
+        "mac": "Alt+Q"
+      },
+      "description": "Open alt-tab-style popup"
+    },
+    "open-search-switcher": {
+      "suggested_key": {
+        "default": "Alt+W",
+        "mac": "Alt+W"
+      },
+      "description": "Search in alt-tab-style popup"
+    },
+    "toggle-last-tab": {
+      "suggested_key": {
+        "default": "Alt+Z",
+        "mac": "Alt+Z"
+      },
+      "description": "Switch to previous tab"
+    }
+  }
+}
