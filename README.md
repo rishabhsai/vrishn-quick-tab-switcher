@@ -1,8 +1,8 @@
-# Helium Quick Switcher
+# Vrishn - Quick Tab Switcher
 
-Fast MRU tab switching for Helium and Chromium-based browsers.
+Fast MRU tab switching for Chrome, Edge, Brave, Helium, and other Chromium-based browsers.
 
-Helium Quick Switcher is a Manifest V3 browser extension inspired by QuicKey's
+Vrishn is a Manifest V3 browser extension inspired by QuicKey's
 keyboard-first tab workflow: open a compact popup, cycle through recently used
 tabs, release the modifier to switch, or search by title and URL.
 
@@ -16,11 +16,12 @@ tabs, release the modifier to switch, or search by title and URL.
 - Hide pinned tabs option.
 - Optional last-search restoration.
 - Adjustable popup width and height.
+- Custom accent color.
 - Dark-mode-aware UI.
 
 ## Install for Development
 
-1. Open `chrome://extensions` or `helium://extensions`.
+1. Open `chrome://extensions`, `edge://extensions`, `brave://extensions`, or `helium://extensions`.
 2. Enable developer mode.
 3. Choose **Load unpacked**.
 4. Select this project directory.
@@ -32,9 +33,9 @@ Suggested shortcuts:
 - **Search in alt-tab-style popup**: `Alt+W` / `Option+W`
 - **Switch to previous tab**: `Alt+Z` / `Option+Z`
 
-On macOS, Chromium's shortcut recorder may capture `Option+Q` as `œ`. If that
-happens, remove and reload the unpacked extension so the manifest default can
-be applied, or use a different shortcut while testing.
+On macOS, Chromium's shortcut recorder may capture `Option+Q` as a special
+character. If that happens, remove and reload the unpacked extension so the
+manifest default can be applied, or use a different shortcut while testing.
 
 ## Usage
 
@@ -57,6 +58,7 @@ Search mode:
 Open the extension options page to configure:
 
 - Popup width and height.
+- Accent color.
 - Whether results are limited to the current browser window.
 - Whether pinned tabs are hidden.
 - Whether the last search query is restored.

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Vrishn icon">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#19346d"/>
+      <stop offset=".55" stop-color="#2f6fed"/>
+      <stop offset="1" stop-color="#16a37b"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <path d="M36 34 64 93 92 34" fill="none" stroke="#ffffff" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M78 84h21" fill="none" stroke="#9df6d6" stroke-width="10" stroke-linecap="round"/>
+</svg>

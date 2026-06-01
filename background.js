@@ -2,6 +2,7 @@ const MRU_KEY = "mru.entries.v1";
 const SETTINGS_KEY = "settings.v1";
 const MAX_MRU = 300;
 const DEFAULT_SETTINGS = {
+  accentColor: "#2f6fed",
   height: 420,
   hidePinnedTabs: false,
   limitToCurrentWindow: false,
@@ -27,10 +28,15 @@ async function getSettings() {
   };
 }
 
+function sanitizeColor(value) {
+  return /^#[0-9a-f]{6}$/i.test(value) ? value : DEFAULT_SETTINGS.accentColor;
+}
+
 async function saveSettings(settings) {
   const width = Math.min(900, Math.max(420, Number(settings.width) || DEFAULT_SETTINGS.width));
   const height = Math.min(720, Math.max(300, Number(settings.height) || DEFAULT_SETTINGS.height));
   const saved = {
+    accentColor: sanitizeColor(settings.accentColor),
     height,
     hidePinnedTabs: Boolean(settings.hidePinnedTabs),
     limitToCurrentWindow: Boolean(settings.limitToCurrentWindow),

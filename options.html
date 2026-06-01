@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Helium Quick Switcher Options</title>
+    <title>Vrishn - Quick Tab Switcher Options</title>
     <link rel="stylesheet" href="options.css">
   </head>
   <body>
     <main class="page">
-      <h1>Helium Quick Switcher</h1>
+      <h1>Vrishn - Quick Tab Switcher</h1>
 
       <section class="panel">
         <h2>Popup window</h2>
@@ -21,6 +21,15 @@
           Height
           <input id="height" type="range" min="300" max="720" step="20">
           <output id="heightValue"></output>
+        </label>
+      </section>
+
+      <section class="panel">
+        <h2>Appearance</h2>
+        <label class="color-row">
+          Accent color
+          <input id="accentColor" type="color" value="#2f6fed">
+          <output id="accentColorValue"></output>
         </label>
       </section>
 
@@ -65,7 +74,7 @@
           <kbd>⌥</kbd><kbd>W</kbd>
         </div>
         <p class="note">
-          If Helium records Option+Q as a character, remove and load the
+          If your browser records Option+Q as a character, remove and load the
           extension again so the manifest default can be applied.
         </p>
         <button id="openShortcuts" type="button">Open browser shortcuts</button>

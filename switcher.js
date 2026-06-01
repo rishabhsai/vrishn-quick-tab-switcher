@@ -4,6 +4,7 @@ const params = new URLSearchParams(location.search);
 
 const state = {
   activeTabId: null,
+  accentColor: "#2f6fed",
   allTabs: [],
   filteredTabs: [],
   hasNavigated: false,
@@ -28,8 +29,8 @@ const mockTabs = [
     id: 1,
     index: 0,
     pinned: false,
-    title: "Helium / pull request review",
-    url: "https://github.com/imputnet/helium/pull/1376",
+    title: "Vrishn / release notes",
+    url: "https://github.com/rishabhsai/vrishn-quick-tab-switcher/releases",
     windowId: 1
   },
   {
@@ -61,11 +62,27 @@ function extensionAvailable() {
 function sendMessage(message) {
   if (!extensionAvailable()) {
     if (message.type === "get-tabs") {
-      return Promise.resolve({activeTabId: 1, tabs: mockTabs});
+      return Promise.resolve({
+        activeTabId: 1,
+        settings: {accentColor: state.accentColor, restoreLastSearch: false},
+        tabs: mockTabs
+      });
     }
     return Promise.resolve({ok: true});
   }
   return chrome.runtime.sendMessage(message);
+}
+
+function isColor(value) {
+  return /^#[0-9a-f]{6}$/i.test(value);
+}
+
+function applyAccentColor(value) {
+  if (!isColor(value)) {
+    return;
+  }
+  state.accentColor = value;
+  document.documentElement.style.setProperty("--accent", value);
 }
 
 function escapeHtml(value) {
@@ -404,6 +421,7 @@ async function loadTabs() {
   });
   state.activeTabId = response.activeTabId;
   state.allTabs = response.tabs || [];
+  applyAccentColor(response.settings?.accentColor || state.accentColor);
   state.restoreLastSearch = Boolean(response.settings?.restoreLastSearch);
   applySavedQueryIfNeeded();
   filterTabs();
