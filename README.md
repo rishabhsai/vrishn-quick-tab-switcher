@@ -72,8 +72,7 @@ serve it with:
 python3 -m http.server 4173 --directory site
 ```
 
-Generated promotional artwork is kept in `site/assets/`. A store-ready
-`1280x800` export is kept in `store-assets/`.
+A store-ready `1280x800` promotional artwork export is kept in `store-assets/`.
 
 ## Privacy
 
